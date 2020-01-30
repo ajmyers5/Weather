@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</head>
+
+<body>
+    <section class="hero is-info">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+             Weather Dashboard
+            </h1>
+            <h2 class="subtitle">
+              Search Desired City
+            </h2>
+          </div>
+        </div>
+      </section>
+    
+    <div class="columns">
+        <div class="column is-one-third" id="cityInput">
+            <input class="input is-rounded" type="text" placeholder= "Your City Name" id="citySearch">
+            <button class="button is-light" id="searchBtn"><i class="fas fa-question"></i>&nbsp Search</button>
+        </div>
+        <div class="column">Auto
+            <div class="city"></div>
+            <div class="temp"></div>
+            <div class="humidity"></div>
+            <div class="windSpeed"></div>
+            <div class="uV"></div>
+        </div>
+        
+      </div>
+
+      
+
+
+</div>
+    
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+<script src="weather.js"></script>
+</html>
+
+<!-- 58ec2f17cb120da67f0d75c76c6810ed  openweatherAPI -->
+
