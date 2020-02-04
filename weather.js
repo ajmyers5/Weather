@@ -14,7 +14,7 @@ $(document).ready(function() {
         
         // var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=58ec2f17cb120da67f0d75c76c6810ed";
         $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?q=atlanta&appid=58ec2f17cb120da67f0d75c76c6810ed',
+        url: 'https://api.openweathermap.org/data/2.5/weather?q=atlanta&appid=58ec2f17cb120da67f0d75c76c6810ed',
         type: "GET",
         dataType: "json",
         success: function(data) {
