@@ -1,8 +1,7 @@
 $(document).ready(function() {
     
     
-    // var cityName = $('#citySearch').val().trim()
-    // var APIKey = "58ec2f17cb120da67f0d75c76c6810ed";
+ 
     
 
     // Here we are building the URL we need to query the database
@@ -10,11 +9,15 @@ $(document).ready(function() {
 
     // Here we run our AJAX call to the OpenWeatherMap API
     $("#searchBtn").click(function (e){
-        console.log("click",)
+        console.log("click")
+        var cityName = $('#citySearch').val().trim()
+        console.log(cityName)
+        var APIKey = "58ec2f17cb120da67f0d75c76c6810ed";
         
-        // var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=imperial&appid=58ec2f17cb120da67f0d75c76c6810ed";
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
+        console.log(queryURL)
         $.ajax({
-        url: 'https://api.openweathermap.org/data/2.5/weather?q=atlanta&appid=58ec2f17cb120da67f0d75c76c6810ed',
+        url: queryURL,
         type: "GET",
         dataType: "json",
         success: function(data) {
